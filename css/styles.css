@@ -131,6 +131,15 @@ header .link {
 /* тут временный паддинг */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   text-align: center;
   background-color: #2f303a;
   padding: 200px 0px;
