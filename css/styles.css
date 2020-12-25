@@ -367,6 +367,34 @@ h1 {
   margin-bottom: 0px;
 }
 
+/* Clients */
+
+.clients li {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.clients li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon {
+  height: 42px;
+}
+
+/* ховер не работает */
+.client:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-icon:hover {
+  fill: var(--accent-color);
+}
+
 /* Footer */
 
 footer {
