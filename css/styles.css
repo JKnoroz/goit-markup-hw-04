@@ -105,9 +105,19 @@ header .link {
 }
 
 .contacts a {
-  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact {
+  color: var(--secondary-text-color);
 }
 
 .menu .link.current,
@@ -116,6 +126,10 @@ header .link {
 .contacts li :hover,
 .contacts li :focus {
   color: var(--accent-color);
+}
+.contacts-icon:hover,
+.contacts-icon:focus {
+  fill: var(--accent-color);
 }
 
 .menu {
@@ -127,8 +141,6 @@ header .link {
 }
 
 /* hero */
-
-/* тут временный паддинг */
 
 .hero {
   max-width: 1600px;
@@ -185,34 +197,14 @@ h1 {
   margin-right: 30px;
 }
 
-.features .item::before {
-  content: '';
-  display: block;
+.features-icon {
   height: 120px;
-  border-radius: 4px;
-
-  background-repeat: no-repeat;
-  background-size: 70px;
+  width: 100%;
+  display: block;
+  padding: 25px 100px;
   background-color: #f5f4fa;
-  background-position: center;
-
+  border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.icon-antenna::before {
-  background-image: url('../images/antenna.svg');
-}
-
-.icon-clock::before {
-  background-image: url('../images/clock.svg');
-}
-
-.icon-diagram::before {
-  background-image: url('../images/diagram.svg');
-}
-
-.icon-astronaut::before {
-  background-image: url('../images/astronaut.svg');
 }
 
 .features p,
@@ -282,8 +274,22 @@ h1 {
 }
 .card-description p {
   color: var(--secondary-text-color);
-  margin-bottom: 0px;
+  margin-bottom: 16px;
   margin-top: 0;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--secondary-text-color);
+}
+
+.team-socials {
+  display: inline-flex;
+}
+
+.team-socials li:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*Portfolio */
@@ -409,6 +415,12 @@ footer {
   padding: 60px 0px;
 }
 
+.bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
 footer .logo {
   color: var(--white-color);
   display: inline-block;
@@ -426,4 +438,33 @@ address p {
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
   margin-top: 9px;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.subscribe p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  display: inline-flex;
+}
+
+.footer-icon {
+  fill: var(--white-color);
+  width: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
