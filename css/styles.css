@@ -295,7 +295,7 @@ h1 {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--secondary-text-color);
+  color: #afb1b8;
 }
 
 .social-link:hover,
@@ -387,7 +387,8 @@ h1 {
   margin-bottom: 30px;
 }
 
-.projects .item:hover {
+.projects .item:hover,
+.projects .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -426,9 +427,6 @@ h1 {
 
 footer {
   background-color: #2f303a;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
   padding: 60px 0px;
 }
 
@@ -457,6 +455,9 @@ address p {
 }
 
 .footer-contacts {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   margin-right: 70px;
 }
 
@@ -491,7 +492,8 @@ address p {
   color: var(--white-color);
 }
 
-.footer-socials a:hover {
+.footer-socials a:hover,
+.footer-socials a:focus {
   background-color: var(--accent-color);
 }
 
